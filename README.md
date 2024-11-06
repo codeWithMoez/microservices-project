@@ -36,22 +36,22 @@ You can now build and run all services using Docker Compose. This will automatic
 To build the services and run them in detached mode (-d):
 ```
 docker-compose up --build -d
-```
 --build forces Docker Compose to rebuild the images.
 -d runs the containers in the background (detached mode).
-3. Verify the Setup
+```
+### 3. Verify the Setup
 After running the above command, Docker Compose will start the following services:
 Frontend: Accessible on http://localhost:80
 User Service: Accessible on http://localhost:5001/users
 Product Service: Accessible on http://localhost:5002/products
 Order Service: Accessible on http://localhost:5003/orders
 You can open your browser and visit http://localhost:80 to see the frontend application interacting with the microservices.
-4. Stop the Containers
-If you want to stop the containers, use the following command:
-bash
-Copy code
-docker-compose down
 
+### 4. Stop the Containers
+If you want to stop the containers, use the following command:
+```
+docker-compose down
+```
 This stops and removes all running containers defined in the docker-compose.yml file.
 
 Services API
