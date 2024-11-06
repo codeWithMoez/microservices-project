@@ -30,14 +30,13 @@ Clone this repository to your local machine:
 ```bash
 git clone https://github.com/your-username/microservices-project.git
 cd microservices-project
-
-2. Build and Start Containers
+```
+### 2. Build and Start Containers
 You can now build and run all services using Docker Compose. This will automatically download the necessary images, build the containers, and start the services.
 To build the services and run them in detached mode (-d):
-bash
-Copy code
+```
 docker-compose up --build -d
-
+```
 --build forces Docker Compose to rebuild the images.
 -d runs the containers in the background (detached mode).
 3. Verify the Setup
